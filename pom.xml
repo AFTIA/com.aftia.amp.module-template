@@ -77,7 +77,7 @@
       </dependency>
       <dependency>
         <groupId>com.aftia.adobe</groupId>
-        <artifactId>doc-cloud-services.karaf-doc-cloud</artifactId>
+        <artifactId>doc-cloud-services.karaf-core</artifactId>
         <version>${aftia.doc.cloud.version}</version>
       </dependency>
       <dependency>

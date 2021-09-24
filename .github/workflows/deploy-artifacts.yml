@@ -22,6 +22,10 @@ jobs:
         with:
           java-version: "11"
           architecture: x64
+      - name: Mvn CLI
+        run: |
+          mvn dependency:get -DgroupId=com.aftia.adobe -DartifactId=doc-cloud-services.core -Dversion=1.0-SNAPSHOT -Dpackaging=jar -Dclassifier=jar-with-dependencies -DremoteRepositories=aftia-github::::https://maven.pkg.github.com/AFTIA/com.aftia.adobe.doc-cloud-services -Ddest=./
+          mvn install:install-file -Dfile=./doc-cloud-services.core-1.0-SNAPSHOT-jar-with-dependencies.jar -DgroupId=com.aftia.adobe -DartifactId=doc-cloud-services.core -Dversion=1.0-SNAPSHOT -Dpackaging=jar -Dclassifier=jar-with-dependencies
       - name: Run Maven
         run: mvn --settings settings.xml clean deploy
         env:
