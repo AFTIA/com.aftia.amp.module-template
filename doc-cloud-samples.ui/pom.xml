@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>doc-cloud-samples</artifactId>
+    <groupId>com.aftia.application</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <groupId>com.aftia.application</groupId>
+  <artifactId>doc-cloud-samples.ui</artifactId>
+
+  <name>Doc Cloud Samples - UI</name>
+  
+  <packaging>bundle</packaging>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <executions>
+          <execution>
+            <id>generate-osgi-metadata-for-unittests</id>
+            <goals>
+              <goal>manifest</goal>
+            </goals>
+            <phase>process-classes</phase>
+          </execution>
+          <!-- Configure extra execution of 'manifest' in process-classes phase 
+						to make sure SCR metadata is generated before unit test runs -->
+          <execution>
+            <id>scr-metadata</id>
+            <goals>
+              <goal>manifest</goal>
+            </goals>
+            <configuration>
+              <supportIncrementalBuild>true</supportIncrementalBuild>
+            </configuration>
+          </execution>
+        </executions>
+        <configuration>
+          <exportScr>true</exportScr>
+          <instructions>
+            <Import-Package>!javax.annotation, *</Import-Package>
+            <!-- Enable processing of OSGI DS component annotations -->
+            <_dsannotations>*</_dsannotations>
+            <!-- Enable processing of OSGI metatype annotations -->
+            <_metatypeannotations>*</_metatypeannotations>
+            <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
+            <Bundle-SymbolicName>${project.groupId}-${project.artifactId}-${project.version}</Bundle-SymbolicName>
+            <Web-ContextPath>/doccloud/samples</Web-ContextPath>
+            <_wab>src/main/webapp</_wab>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
