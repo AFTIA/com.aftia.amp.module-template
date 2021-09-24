@@ -58,18 +58,6 @@
       <artifactId>doc-cloud-services.karaf-doc-cloud</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.aftia.adobe</groupId>
-      <artifactId>doc-cloud-services.core</artifactId>
-      <version>${aftia.doc.cloud.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.aftia.adobe</groupId>
-      <artifactId>doc-cloud-services.core</artifactId>
-      <version>${aftia.doc.cloud.version}</version>
-      <type>jar</type>
-      <classifier>jar-with-dependencies</classifier>
-    </dependency>
-    <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
     </dependency>
