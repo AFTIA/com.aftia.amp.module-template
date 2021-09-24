@@ -2,16 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>doc-cloud-samples</artifactId>
-    <groupId>com.aftia.application</groupId>
+    <groupId>com.aftia.vm.system</groupId>
+    <artifactId>module-template</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.aftia.application</groupId>
-  <artifactId>doc-cloud-samples.core</artifactId>
+  <groupId>com.aftia.vm.system</groupId>
+  <artifactId>module-template.core</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>Doc Cloud Sample - Core</name>
+  <name>Module Template - Core</name>
 
   <packaging>bundle</packaging>
 
@@ -48,14 +48,6 @@
     <dependency>
       <groupId>org.osgi</groupId>
       <artifactId>osgi.annotation</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.adobe.documentservices</groupId>
-      <artifactId>pdfservices-sdk</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.aftia.adobe</groupId>
-      <artifactId>doc-cloud-services.karaf-core</artifactId>
     </dependency>
     <dependency>
       <groupId>commons-io</groupId>

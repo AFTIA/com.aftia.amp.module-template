@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.aftia.application</groupId>
-  <artifactId>doc-cloud-samples</artifactId>
+  <groupId>com.aftia.vm.system</groupId>
+  <artifactId>module-template</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>Doc Cloud Samples</name>
+  <name>Module Template</name>
 
   <packaging>pom</packaging>
 
@@ -12,13 +12,11 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <aftia.doc.cloud.version>1.0-SNAPSHOT</aftia.doc.cloud.version>
-    <pdfservices.sdk.version>2.1.0</pdfservices.sdk.version>
   </properties>
 
   <modules>
-    <module>doc-cloud-samples.ui</module>
-    <module>doc-cloud-samples.core</module>
+    <module>module-template.ui</module>
+    <module>module-template.core</module>
   </modules>
 
   <repositories>
@@ -69,16 +67,6 @@
         <artifactId>osgi.annotation</artifactId>
         <version>7.0.0</version>
         <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.adobe.documentservices</groupId>
-        <artifactId>pdfservices-sdk</artifactId>
-        <version>${pdfservices.sdk.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.aftia.adobe</groupId>
-        <artifactId>doc-cloud-services.karaf-core</artifactId>
-        <version>${aftia.doc.cloud.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
