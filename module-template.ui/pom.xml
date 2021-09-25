@@ -9,6 +9,7 @@
 
   <groupId>com.aftia.vm.system</groupId>
   <artifactId>module-template.ui</artifactId>
+  <version>1.0-SNAPSHOT</version>
 
   <name>Module Template - UI</name>
   
