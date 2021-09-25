@@ -3,7 +3,7 @@
   "homepage": "https://github.com/AFTIA/com.aftia.vm.system.module-template",
   "description": "A Vue and Tailwind Core UI Project",
   "repository": "https://github.com/AFTIA/com.aftia.vm.system.module-template",
-  "license": "unlicensed",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build && gulp licenses",

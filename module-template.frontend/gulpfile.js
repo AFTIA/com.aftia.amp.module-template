@@ -2,11 +2,14 @@ const gulp = require("gulp");
 const gap = require("gulp-append-prepend");
 
 gulp.task("licenses", async function () {
-  // this is to add Creative Tim licenses in the production mode for the minified js
   gulp
     .src("dist/js/*.js", { base: "./" })
     .pipe(
       gap.prependText(`/*!
+
+=========================================================
+* AFTIA Core UI - based on Tailwind Starter Kit by Creative Tim
+=========================================================
 
 =========================================================
 * Vue Notus - v1.1.0 based on Tailwind Starter Kit by Creative Tim
@@ -33,6 +36,9 @@ gulp.task("licenses", async function () {
     .src("dist/index.html", { base: "./" })
     .pipe(
       gap.prependText(`<!--
+=========================================================
+* AFTIA Core UI - based on Tailwind Starter Kit by Creative Tim
+=========================================================
 
 =========================================================
 * Vue Notus - v1.1.0 based on Tailwind Starter Kit by Creative Tim
@@ -59,6 +65,9 @@ gulp.task("licenses", async function () {
     .src("dist/css/*.css", { base: "./" })
     .pipe(
       gap.prependText(`/*!
+=========================================================
+* AFTIA Core UI - based on Tailwind Starter Kit by Creative Tim
+=========================================================
 
 =========================================================
 * Vue Notus - v1.1.0 based on Tailwind Starter Kit by Creative Tim
