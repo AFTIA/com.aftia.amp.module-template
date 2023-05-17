@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.aftia.vm.system</groupId>
-  <artifactId>module-template</artifactId>
+  <groupId>com.aftia.amp</groupId>
+  <artifactId>amp-module-template</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>Module Template</name>
+  <name>AMP Module Template</name>
 
   <packaging>pom</packaging>
 
@@ -12,29 +12,34 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <node.version>v14.17.6</node.version>
-    <npm.version>6.14.13</npm.version>
+    <node.version>v18.14.2</node.version>
+    <npm.version>9.5.0</npm.version>
   </properties>
 
   <modules>
-    <module>module-template.frontend</module>
-    <module>module-template.ui</module>
-    <module>module-template.core</module>
+    <module>amp-module-template.frontend</module>
+    <module>amp-module-template.ui</module>
+    <module>amp-module-template.core</module>
   </modules>
 
   <repositories>
     <repository>
-      <id>aftia-artifacts-aftia-internal</id>
-      <name>aftia-artifacts-aftia-internal</name>
-      <url>https://aftia-artifacts-282486032588.d.codeartifact.us-east-2.amazonaws.com/maven/aftia-internal/</url>
+      <id>ampfeed</id>
+      <url>https://pkgs.dev.azure.com/aftiasolutions/_packaging/AMPFeed/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
     </repository>
   </repositories>
 
   <distributionManagement>
     <repository>
-      <id>aftia-artifacts-aftia-internal</id>
-      <name>aftia-artifacts-aftia-internal</name>
-      <url>https://aftia-artifacts-282486032588.d.codeartifact.us-east-2.amazonaws.com/maven/aftia-internal/</url>
+      <id>ampfeed</id>
+      <name>ampfeed</name>
+      <url>https://pkgs.dev.azure.com/aftiasolutions/_packaging/AMPFeed/maven/v1</url>
     </repository>
   </distributionManagement>
 

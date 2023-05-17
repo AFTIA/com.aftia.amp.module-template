@@ -1,5 +1,5 @@
-![Build Status](https://github.com/AFTIA/com.aftia.vm.system.module-template/workflows/Build%20and%20Test/badge.svg) 
-# com.aftia.vm.system.module-template
+![Build Status](https://github.com/AFTIA/com.aftia.amp.module-template/workflows/Build%20and%20Test/badge.svg) 
+# com.aftia.amp.module-template
 
 A module template repository including a `core` and `ui` module for the development of new OSGI/Karaf apps.
 
@@ -13,6 +13,12 @@ A module template repository including a `core` and `ui` module for the developm
         * (Recommended Extension) [GIT Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
         * (Recommended Extension) [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 * [GIT SCM](https://git-scm.com/)
+
+## Configuring Azure DevOps Artifacts Token
+1. Navigate to https://dev.azure.com/aftiasolutions/_usersSettings/tokens
+2. Create a new personnal access token (PAT) with the **Build: Read & Execute** and **Packaging: Read & Write** permission.
+    1. **Note:** The use of `mvn deploy` requires a **Full Access** PAT
+3. Configure a new local environment variable named `AMP_ARTIFACTS_PAT` to store the value of your PAT and variable named `AMP_ARTIFACTS_PAT_BASE64` to store [the base64 value](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-base64-encode-and-decode-from-command-line/) of your PAT for NPM
 
 ## Modules
 
