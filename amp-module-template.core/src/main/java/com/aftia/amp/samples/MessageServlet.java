@@ -1,4 +1,4 @@
-package com.aftia.vm.system.samples;
+package com.aftia.amp.samples;
 
 import java.io.IOException;
 
