@@ -1,4 +1,4 @@
-# aftia-amp-module-template
+# aftia-amp-module-template.frontend
 
 ## Project setup
 ```

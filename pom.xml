@@ -18,6 +18,7 @@
 
   <modules>
     <module>amp-module-template.frontend</module>
+    <module>amp-module-template.frontend.partial</module>
     <module>amp-module-template.ui</module>
     <module>amp-module-template.core</module>
   </modules>
