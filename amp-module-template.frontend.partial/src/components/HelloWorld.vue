@@ -35,7 +35,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from '../../../../amp-admin.frontend/node_modules/vue';
 
 export default defineComponent({
   name: 'HelloWorld',
