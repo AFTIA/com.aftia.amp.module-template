@@ -36,4 +36,4 @@ jobs:
         env:
           AMP_ARTIFACTS_PAT: ${{ secrets.AMP_ARTIFACTS_PAT }}
           AMP_ARTIFACTS_PAT_BASE64: ${{ secrets.AMP_ARTIFACTS_PAT_BASE64 }}
-        run: mvn test -s settings.xml
+        run: mvn clean install -s settings.xml
