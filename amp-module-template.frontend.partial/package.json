@@ -1,0 +1,22 @@
+{
+  "name": "@aftia/aftia-amp-module-template.partial",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "link": "npm run install && node init.js ../../amp-admin.frontend/node_modules",
+    "install": "npm install --prefix ./.tmp lnk"
+  },
+  "files": [
+    "package.json",
+    "!package-lock.json",
+    "index.ts",
+    "*.config.js",
+    "*.json",
+    "*.js",
+    "src/",
+    "public/"
+  ],
+  "dependencies": {
+    "lnk": "^1.1.0"
+  }
+}
